@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home Page</title>
+    <style>
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .custom-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        h1{
+        text-align:center;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <div class="button-container">
+        <form action="/register">
+            <button class="custom-button" type="submit">Register</button>
+        </form>
+        <form action="/login">
+            <button class="custom-button" type="submit">Login</button>
+        </form>
+        <form action="/forgot-password">
+            <button class="custom-button" type="submit">Forgot Password</button>
+        </form>
+    </div>
+</body>
+</html>
